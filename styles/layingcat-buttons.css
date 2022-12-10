@@ -74,6 +74,7 @@ button {
 }
 
 .mumma-belly {
+  opacity: 0;
   display: none;
   justify-content: center;
   align-items: center;
@@ -82,8 +83,10 @@ button {
   height: 100%;
   position: absolute;
   z-index: 50;
+  animation-fill-mode: forwards;
   animation-name: fadeIn;
   animation-duration: 2s;
+  animation-delay: 0.8s;
 }
 
 .mumma-belly h2 {

@@ -3,65 +3,67 @@ const setElementDisplay = (element, display) => {
 };
 
 // button for ears
-const buttonEars = document.querySelectorAll("#button-ear");
+const buttonEars = document.querySelectorAll('#button-ear');
 
 buttonEars.forEach((buttonEar) => {
-  buttonEar.addEventListener("click", () => {
+  buttonEar.addEventListener('click', () => {
     buttonBack.disabled = true;
-    setElementDisplay(".mumma-ear", "block");
+    setElementDisplay('.mumma-ear', 'block');
     setTimeout(() => {
-      setElementDisplay(".mumma-ear", "none");
+      setElementDisplay('.mumma-ear', 'none');
     }, 2000);
     buttonBack.disabled = false;
   });
 });
 
 // button for nose
-const buttonNose = document.querySelector("#button-nose");
+const buttonNose = document.querySelector('#button-nose');
 
-buttonNose.addEventListener("click", () => {
+buttonNose.addEventListener('click', () => {
   buttonBack.disabled = true;
-  setElementDisplay(".mumma-nose", "block");
+  setElementDisplay('.mumma-nose', 'block');
   setTimeout(() => {
-    setElementDisplay(".mumma-nose", "none");
+    setElementDisplay('.mumma-nose', 'none');
   }, 2000);
   buttonBack.disabled = false;
 });
 
 // button for paw
-const buttonPaw = document.querySelector("#button-paw");
+const buttonPaw = document.querySelector('#button-paw');
 
-buttonPaw.addEventListener("click", () => {
+buttonPaw.addEventListener('click', () => {
   buttonBack.disabled = true;
-  setElementDisplay(".mumma-paw", "block");
+  setElementDisplay('.mumma-paw', 'block');
   setTimeout(() => {
-    setElementDisplay(".mumma-paw", "none");
+    setElementDisplay('.mumma-paw', 'none');
   }, 2000);
   buttonBack.disabled = false;
 });
 
 // button for belly
-const buttonBelly = document.querySelector("#button-belly");
+const buttonBelly = document.querySelector('#button-belly');
 
-buttonBelly.addEventListener("click", () => {
+buttonBelly.addEventListener('click', () => {
   buttonBack.disabled = true;
-  setElementDisplay(".mumma-belly", "flex");
+  setElementDisplay('.left-slash', 'block');
+  setElementDisplay('.right-slash', 'block');
+  setElementDisplay('.mumma-belly', 'flex');
 });
 
 // button for back
-const buttonBack = document.querySelector("#button-back");
+const buttonBack = document.querySelector('#button-back');
 
-buttonBack.addEventListener("click", async () => {
+buttonBack.addEventListener('click', async () => {
   buttonBack.disabled = true;
-  const message = "Purr purr...";
-  const mummaBack = document.querySelector(".mumma-back");
+  const message = 'Purr purr...';
+  const mummaBack = document.querySelector('.mumma-back');
 
-  const messageLetters = message.split("");
+  const messageLetters = message.split('');
 
   const promises = messageLetters.map((letter, index) => {
     const promise = new Promise((resolve, reject) => {
       setTimeout(() => {
-        const back = document.querySelector(".mumma-back");
+        const back = document.querySelector('.mumma-back');
         back.textContent += letter;
         resolve();
       }, 100 + 150 * index);
@@ -72,6 +74,6 @@ buttonBack.addEventListener("click", async () => {
 
   const awaited = await Promise.all(promises);
 
-  mummaBack.textContent = "";
+  mummaBack.textContent = '';
   buttonBack.disabled = false;
 });
