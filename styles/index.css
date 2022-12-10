@@ -1,7 +1,7 @@
 :root {
   --accent-color: #be0909;
   --button-color: rgb(224 224 224);
-  --oswald: "Oswald", sans-serif;
+  --oswald: 'Oswald', sans-serif;
 }
 
 * {
@@ -10,9 +10,9 @@
 }
 
 @font-face {
-  font-family: "Oswald";
-  src: local("Oswald"), url("fonts/Oswald-Medium.woff2") format("woff2"),
-    url("fonts/Oswald-Medium.woff") format("woff");
+  font-family: 'Oswald';
+  src: local('Oswald'), url('fonts/Oswald-Medium.woff2') format('woff2'),
+    url('fonts/Oswald-Medium.woff') format('woff');
 }
 
 button {
