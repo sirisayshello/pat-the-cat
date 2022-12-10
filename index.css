@@ -1,0 +1,117 @@
+:root {
+  --accent-color: #be0909;
+  --button-color: rgb(224 224 224);
+  --oswald: "Oswald", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"), url("fonts/Oswald-Medium.woff2") format("woff2"),
+    url("fonts/Oswald-Medium.woff") format("woff");
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  font-family: var(--oswald);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.cat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 4rem;
+}
+
+.cat-selection {
+  width: 80%;
+}
+
+a img {
+  display: flex;
+  margin: auto;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+.namethislater {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 560px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .cat-container {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 7rem;
+    height: 50vh;
+  }
+}
