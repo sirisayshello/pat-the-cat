@@ -28,6 +28,15 @@
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .slash {
   background-color: var(--accent-color);
   width: 200px;
@@ -53,4 +62,29 @@
 .left-slash {
   rotate: 45deg;
   animation: slashAnimationLeft 0.4s linear forwards;
+}
+
+.mumma-belly {
+  opacity: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 50;
+  animation-fill-mode: forwards;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 0.8s;
+}
+
+.mumma-belly h2 {
+  color: var(--accent-color);
+  font-size: 4rem;
+  font-family: var(--notoSerifDisplay);
+  font-weight: 300;
+  animation-name: fadeIn;
+  animation-duration: 5s;
 }

@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: 'Oswald';
-  src: local('Oswald'), url('fonts/Oswald-Medium.woff2') format('woff2'),
-    url('fonts/Oswald-Medium.woff') format('woff');
+  src: local('Oswald'), url('/fonts/Oswald-Medium.woff2') format('woff2'),
+    url('/fonts/Oswald-Medium.woff') format('woff');
 }
 
 button {
