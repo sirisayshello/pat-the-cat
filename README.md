@@ -1,12 +1,14 @@
-INSERT MANDATORY GIF
+<img src="https://media.giphy.com/media/lArvz2jS2VnxMnLgvt/giphy.gif" width="100%">
 
-# Project Title
+# Pat the cat
 
-Text about the project. This would also be a great place to link the game on Netlify.
+Another useless website. Pick your cat, pat your cat. Good luck... Have fun!
+
+[Pat the cat](https://patthecat.netlify.app/)
 
 # Installation
 
-Add the installation instructions.
+Open the index.html in a browser.
 
 # Code Review
 
