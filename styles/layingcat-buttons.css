@@ -14,8 +14,8 @@ button {
 .button-paw,
 .button-back,
 .button-belly {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
 }
 
@@ -40,19 +40,21 @@ button {
 .button-paw {
   top: 72%;
   left: 11%;
+  width: 6rem;
   position: absolute;
 }
 
 .button-back {
+  width: 8rem;
   top: 28%;
   left: 45%;
   position: absolute;
 }
 
 .button-belly {
+  width: 10rem;
   top: 63%;
   left: 42%;
-  width: 4rem;
   position: absolute;
 }
 
@@ -67,32 +69,4 @@ button {
 .mumma-back {
   position: absolute;
   top: 10%;
-}
-
-@media screen and (min-width: 560px) {
-  .button-left-ear {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .button-right-ear {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .button-nose,
-  .button-paw {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .button-back {
-    width: 8rem;
-    height: 4rem;
-  }
-
-  .button-belly {
-    width: 10rem;
-    height: 4rem;
-  }
 }
