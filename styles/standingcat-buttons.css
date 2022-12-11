@@ -11,119 +11,63 @@ button {
 .button-left-ear,
 .button-right-ear,
 .button-nose,
-.button-paw,
 .button-back,
+.button-tail,
 .button-belly {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
 }
 
 .button-left-ear {
   top: 10%;
-  left: 17%;
+  left: 54%;
   position: absolute;
 }
 
 .button-right-ear {
   top: 10%;
-  left: 27%;
+  left: 61%;
   position: absolute;
 }
 
 .button-nose {
-  top: 32%;
-  left: 22%;
+  top: 26%;
+  left: 58%;
   position: absolute;
 }
 
-.button-paw {
-  top: 72%;
-  left: 11%;
+.button-tail {
+  top: 16%;
+  left: 36%;
+  width: 3rem;
+  height: 8rem;
   position: absolute;
 }
 
 .button-back {
   top: 28%;
   left: 45%;
+  width: 8rem;
   position: absolute;
 }
 
 .button-belly {
   top: 55%;
   left: 42%;
-  width: 4rem;
+  width: 10rem;
   position: absolute;
 }
 
 .mumma-ear,
 .mumma-nose,
-.mumma-paw {
+.mumma-tail {
   display: none;
   width: 90%;
   position: absolute;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.mumma-belly {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 50;
-  animation-name: fadeIn;
-  animation-duration: 2s;
-}
-
-.mumma-belly h2 {
-  color: var(--accent-color);
-  font-size: 4rem;
-  font-family: var(--notoSerifDisplay);
-  font-weight: 300;
-  animation-name: fadeIn;
-  animation-duration: 5s;
-}
-
-.mumma-back {
+.mumma-message {
   position: absolute;
   top: 10%;
-}
-
-@media screen and (min-width: 560px) {
-  .button-left-ear {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .button-right-ear {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .button-nose,
-  .button-paw {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .button-back {
-    width: 8rem;
-    height: 4rem;
-  }
-
-  .button-belly {
-    width: 10rem;
-    height: 4rem;
-  }
 }
