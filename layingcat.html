@@ -44,7 +44,15 @@
           <h2 class="mumma-back"></h2>
           <img
             class="laying-cat-img"
-            src="images/mumma.png"
+            srcset="
+              images/mumma-500w.jpg   500w,
+              images/mumma-1000w.png 1000w,
+              images/mumma-2000w.png 2000w
+            "
+            sizes="(max-width: 600px) 500w,
+            (max-width: 1000px) 1000w
+                2000w, "
+            src="images/mumma-1000w.png"
             alt="A calico cat laying on it's side."
           />
 

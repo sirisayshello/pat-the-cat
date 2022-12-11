@@ -41,7 +41,14 @@
           <h2 class="mumma-message"></h2>
           <img
             class="standing-cat-img"
-            src="images/mumma1.png"
+            srcset="
+              images/mumma-standing-500w.jpg   500w,
+              images/mumma-standing-1000w.png 1000w
+            "
+            sizes="(max-width: 600px) 500px,
+              1000px"
+            class="cat-selection"
+            src="images/mumma-standing-1000w.png"
             alt="A calico cat standing up."
           />
 
