@@ -1,7 +1,7 @@
-const spinObject = () => {
+const spinObject = (e) => {
   const catImages = document.querySelectorAll('.cat-container img');
   catImages.forEach((catImg) => {
-    catImg.classList.add('spin');
+    catImg.style.transform = `rotate(${window.scrollY}deg)`;
   });
 };
 
