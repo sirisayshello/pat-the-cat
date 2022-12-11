@@ -48,6 +48,11 @@ main {
   width: 100%;
 }
 
+.tap-img {
+  height: 2rem;
+  width: 2rem;
+}
+
 .text-container {
   display: flex;
   gap: 1rem;
