@@ -7,12 +7,12 @@ const buttonEars = document.querySelectorAll('#button-ear');
 
 buttonEars.forEach((buttonEar) => {
   buttonEar.addEventListener('click', () => {
-    buttonBack.disabled = true;
+    buttonEar.disabled = true;
     setElementDisplay('.mumma-ear', 'block');
     setTimeout(() => {
       setElementDisplay('.mumma-ear', 'none');
     }, 2000);
-    buttonBack.disabled = false;
+    buttonEar.disabled = false;
   });
 });
 
@@ -20,31 +20,31 @@ buttonEars.forEach((buttonEar) => {
 const buttonNose = document.querySelector('#button-nose');
 
 buttonNose.addEventListener('click', () => {
-  buttonBack.disabled = true;
+  buttonNose.disabled = true;
   setElementDisplay('.mumma-nose', 'block');
   setTimeout(() => {
     setElementDisplay('.mumma-nose', 'none');
   }, 2000);
-  buttonBack.disabled = false;
+  buttonNose.disabled = false;
 });
 
 // button for paw
 const buttonPaw = document.querySelector('#button-paw');
 
 buttonPaw.addEventListener('click', () => {
-  buttonBack.disabled = true;
+  buttonPaw.disabled = true;
   setElementDisplay('.mumma-paw', 'block');
   setTimeout(() => {
     setElementDisplay('.mumma-paw', 'none');
   }, 2000);
-  buttonBack.disabled = false;
+  buttonPaw.disabled = false;
 });
 
 // button for belly
 const buttonBelly = document.querySelector('#button-belly');
 
 buttonBelly.addEventListener('click', () => {
-  buttonBack.disabled = true;
+  buttonBelly.disabled = true;
   setElementDisplay('.left-slash', 'block');
   setElementDisplay('.right-slash', 'block');
   setElementDisplay('.mumma-belly', 'flex');
@@ -55,7 +55,7 @@ const buttonBack = document.querySelector('#button-back');
 
 buttonBack.addEventListener('click', async () => {
   buttonBack.disabled = true;
-  const message = 'Purr purr...';
+  const message = 'purr purr...';
   const mummaBack = document.querySelector('.mumma-back');
 
   const messageLetters = message.split('');
