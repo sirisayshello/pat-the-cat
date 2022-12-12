@@ -22,5 +22,5 @@ Open the index.html in a browser.
 
 Tested by the following people:
 
-1. Jane Doe
-2. John Doe
+1. Axel Enghamre
+2. Petter Jakobsson
