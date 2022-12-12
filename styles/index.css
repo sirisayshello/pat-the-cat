@@ -29,6 +29,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   font-family: var(--oswald);
 }
@@ -82,18 +83,13 @@ a img {
   animation: spin 2s linear infinite;
 }
 
-.namethislater {
+.text-container {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 560px) {
-  main {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .intro {
     flex-direction: column;
     align-items: center;
